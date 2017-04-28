@@ -5,7 +5,7 @@
 <div class="row">
     <div class="col-md-12">
         <h2>Azure Hands-On Lab: Web App Authentication and Authorization</h2>
-        <p>This lab demonstrates using a Facebook app to allow users to log in to your Web App.</p>
+        <p>This lab demonstrates using an OpenID Connect claim, through a supported social media provider in Azure App Service, to allow users to log in to a Web App.</p>
         @if (ClaimsPrincipal.Current.Identity != null)
         {
             <p class="bg-success">Well hello there, @ClaimsPrincipal.Current.FindFirst(ClaimTypes.Name).Value!</p>
