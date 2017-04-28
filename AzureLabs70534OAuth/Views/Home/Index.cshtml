@@ -8,7 +8,7 @@
         <p>This lab demonstrates using a Facebook app to allow users to log in to your Web App.</p>
         @if (ClaimsPrincipal.Current.Identity != null)
         {
-            <p class="btn btn-success">Well hello there, @ClaimsPrincipal.Current.FindFirst(ClaimTypes.Name).Value!</p>
+            <p class="bg-success">Well hello there, @ClaimsPrincipal.Current.FindFirst(ClaimTypes.Name).Value!</p>
             <p>Here's the information I've been able to get about you from your social media provider:</p>
             <table class="table table-striped">
                 <thead>
@@ -30,7 +30,7 @@
         }
         else
         {
-            <p class="btn btn-danger">You haven't logged in to this Web App via authorization, so I'm not sure who you are.</p>
+            <p class="bg-danger">You haven't logged in to this Web App via authorization, so I'm not sure who you are.</p>
         }
     </div>
 </div>
